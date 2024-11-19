@@ -1,0 +1,20 @@
+{
+  "name": "test-lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.6",
+    "tsx": "^4.19.2"
+  }
+}
