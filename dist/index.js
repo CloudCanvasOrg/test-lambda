@@ -24,6 +24,13 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 async function handler(event) {
+  console.log(event);
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: "Hello World!"
+    })
+  };
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
