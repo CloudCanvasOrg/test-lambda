@@ -24,12 +24,10 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 async function handler(event) {
-  console.log(event);
+  console.log("running");
   return {
     statusCode: 200,
-    body: JSON.stringify({
-      message: "Hello World!"
-    })
+    body: "<div>Test lambda</div>"
   };
 }
 // Annotate the CommonJS export names for ESM import in node:
