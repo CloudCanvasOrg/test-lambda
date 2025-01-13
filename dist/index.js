@@ -24,9 +24,10 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 async function handler(event) {
-  console.log("running");
+  console.log(event);
   return {
     statusCode: 200,
+    headers: { "Content-Type": "text/html" },
     body: "<div>Test lambda</div>"
   };
 }

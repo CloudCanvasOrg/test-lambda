@@ -6,7 +6,7 @@ import {
 export async function handler(
   event: APIGatewayProxyEventV2
 ): Promise<APIGatewayProxyStructuredResultV2> {
-  console.log("running");
+  console.log(event);
   return {
     statusCode: 200,
     headers: { "Content-Type": "text/html" },
