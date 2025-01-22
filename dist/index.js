@@ -24,7 +24,7 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 async function handler(event) {
-  console.log(event);
+  console.log("recv req");
   return {
     statusCode: 200,
     headers: { "Content-Type": "text/html" },
